@@ -60,7 +60,6 @@ def railfence_decrypt():
     decrypt_text = railfence_cipher.rail_fence_decrypt(cipher_text, key)
     return jsonify({"encrypted_message": decrypt_text})
 
-
 playfair_cipher = PlayFairCipher()
 
 @app.route("/api/playfair/creatematrix", methods=["POST"])
